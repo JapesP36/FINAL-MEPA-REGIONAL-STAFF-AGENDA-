@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEPA Regional Staff Strategy Summit | Final Agenda</title>
+<style>
+:root{
+  --eo-blue:#3D46F2;
+  --base-blue:#0C0C31;
+  --white:#FFFFFF;
+  --pink:#FF346E;
+  --orange:#FA653C;
+  --yellow:#EFB82E;
+  --green:#1EA691;
+  --gray:#5E617D;
+  --light-blue:#A3A7E4;
+  --dark-blue:#1D007F;
+  --light-gray:#F5F6FA;
+  --border:#E3E5EF;
+  --text:#25263B;
+  --muted:#666A84;
+  --shadow:0 18px 48px rgba(12,12,49,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,#fff 0%,#F7F8FC 48%,#fff 100%);
+  line-height:1.6;
+}
+a{color:inherit}
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(12,12,49,.96);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+.topbar-inner{
+  max-width:1200px;margin:0 auto;padding:12px 24px;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:12px;color:white;font-weight:800}
+.brand-mark{display:flex;align-items:center;gap:7px}
+.eo-e{font-size:28px;line-height:1;font-weight:900;letter-spacing:-.08em}
+.eo-o{
+  width:30px;height:30px;border-radius:50%;
+  border:5px solid var(--eo-blue);
+  box-shadow:inset 0 0 0 4px var(--pink), inset 0 0 0 8px var(--yellow);
+}
+.brand-text{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#E9EAFF}
+.nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{
+  color:#E9EAFF;text-decoration:none;font-size:12px;font-weight:700;
+  padding:7px 10px;border-radius:999px
+}
+.nav a:hover{background:rgba(255,255,255,.10)}
+.hero{
+  position:relative;overflow:hidden;color:white;
+  background:linear-gradient(135deg,#0C0C31 0%,#17175A 55%,#1D007F 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:-10%;
+  background:
+    radial-gradient(circle at 18% 18%,rgba(255,52,110,.22),transparent 22rem),
+    radial-gradient(circle at 80% 24%,rgba(61,70,242,.28),transparent 28rem),
+    radial-gradient(circle at 78% 86%,rgba(30,166,145,.18),transparent 24rem);
+}
+.hero-inner{
+  max-width:1200px;margin:0 auto;padding:76px 24px 106px;position:relative;
+  display:grid;grid-template-columns:1.18fr .82fr;gap:44px;align-items:center;
+}
+.eyebrow{
+  text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:800;
+  color:var(--light-blue);margin-bottom:12px
+}
+h1{
+  margin:0;font-size:clamp(44px,6vw,74px);line-height:.98;letter-spacing:-.045em;
+  max-width:840px
+}
+.hero p{
+  margin:22px 0 0;max-width:780px;font-size:19px;color:#E8E9FF
+}
+.hero-card{
+  padding:26px;border:1px solid rgba(255,255,255,.16);border-radius:22px;
+  background:rgba(255,255,255,.08);box-shadow:0 24px 70px rgba(0,0,0,.25)
+}
+.hero-card h2{color:white;font-size:22px;margin:0 0 16px}
+.flow{display:grid;gap:10px}
+.flow-item{
+  display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.08);
+  border-radius:13px;padding:12px 14px;font-weight:800
+}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--eo-blue);flex:none}
+.flow-item:nth-child(2) .dot{background:var(--pink)}
+.flow-item:nth-child(3) .dot{background:var(--orange)}
+.flow-item:nth-child(4) .dot{background:var(--green)}
+main{max-width:1200px;margin:0 auto;padding:0 24px 74px}
+.intro{
+  background:white;border:1px solid var(--border);border-left:7px solid var(--eo-blue);
+  border-radius:22px;padding:28px;box-shadow:var(--shadow);margin-top:-60px;position:relative;z-index:2
+}
+.intro p{margin:0 0 12px;font-size:17px}
+.intro p:last-child{margin-bottom:0}
+.section{margin-top:54px}
+.kicker{
+  text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:800;
+  color:var(--eo-blue);margin-bottom:8px
+}
+h2{
+  margin:0;color:var(--base-blue);font-size:clamp(30px,4vw,47px);
+  line-height:1.06;letter-spacing:-.035em
+}
+.section-lead{max-width:880px;color:var(--muted);font-size:16px;margin:12px 0 0}
+.architecture{display:grid;gap:15px;margin-top:24px}
+.arch-card{
+  display:grid;grid-template-columns:180px 1.2fr .8fr;gap:22px;
+  background:white;border:1px solid var(--border);border-radius:20px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(12,12,49,.05)
+}
+.arch-time{
+  background:var(--base-blue);color:white;padding:22px;
+  display:flex;flex-direction:column;justify-content:center
+}
+.arch-time strong{font-size:17px}
+.arch-time span{font-size:13px;color:#D9DCFF;margin-top:6px;font-weight:700}
+.arch-main{padding:22px 0}
+.movement{
+  display:inline-block;padding:5px 10px;border-radius:999px;background:#EEF0FF;
+  color:var(--dark-blue);font-size:11px;font-weight:900;text-transform:uppercase;
+  letter-spacing:.06em;margin-bottom:9px
+}
+.arch-main h3{margin:0 0 8px;color:var(--base-blue);font-size:23px;line-height:1.15}
+.arch-main p{margin:0;color:var(--muted)}
+.arch-question{
+  padding:22px 22px 22px 0;display:flex;align-items:center;
+  font-weight:800;color:var(--base-blue);font-size:15px
+}
+.outputs{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px
+}
+.output{
+  background:white;border:1px solid var(--border);border-radius:18px;padding:18px;
+  min-height:118px;position:relative;overflow:hidden
+}
+.output::before{
+  content:"";position:absolute;top:0;left:18px;width:44px;height:5px;
+  border-radius:999px;background:var(--eo-blue)
+}
+.output:nth-child(2)::before{background:var(--pink)}
+.output:nth-child(3)::before{background:var(--orange)}
+.output:nth-child(4)::before{background:var(--green)}
+.output strong{display:block;color:var(--base-blue);line-height:1.2;margin:8px 0}
+.output span{color:var(--muted);font-size:13px}
+.session{
+  margin-top:28px;background:white;border:1px solid var(--border);
+  border-radius:26px;overflow:hidden;box-shadow:var(--shadow)
+}
+.session-top{
+  padding:28px;color:white;background:linear-gradient(135deg,var(--base-blue),var(--dark-blue));
+  display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start
+}
+#session2 .session-top{background:linear-gradient(135deg,var(--base-blue),#3D46F2)}
+#session3 .session-top{background:linear-gradient(135deg,var(--base-blue),#A3374E)}
+#session4 .session-top{background:linear-gradient(135deg,var(--base-blue),#217563)}
+.session-top h3{margin:0;color:white;font-size:clamp(28px,4vw,40px);line-height:1.05}
+.session-top p{margin:10px 0 0;color:#ECEEFF;max-width:800px;font-size:16px}
+.meta{
+  min-width:180px;text-align:right;border:1px solid rgba(255,255,255,.16);
+  border-radius:16px;background:rgba(255,255,255,.09);padding:14px 16px
+}
+.meta strong{display:block;font-size:15px}
+.meta span{display:block;font-size:12px;color:#E1E3FF;margin-top:3px;font-weight:700}
+.session-body{
+  padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px
+}
+.full{grid-column:1/-1}
+h4{
+  margin:0 0 9px;color:var(--base-blue);font-size:14px;text-transform:uppercase;
+  letter-spacing:.08em
+}
+.session-body p{margin:0;color:var(--muted)}
+.session-body ul{margin:8px 0 0;padding-left:20px}
+.session-body li{margin:7px 0}
+.question-box{
+  background:#F2F3FF;border:1px solid #D9DCFF;border-radius:18px;padding:20px
+}
+.question-box strong{color:var(--base-blue);display:block;margin-bottom:5px}
+.output-box{
+  background:#F0FAF7;border:1px solid #CEEDE5;border-radius:18px;padding:20px
+}
+.output-box strong{color:#145A4B}
+.focus-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px
+}
+.focus{
+  padding:15px;border:1px solid var(--border);border-radius:16px;background:#FBFBFE
+}
+.focus b{color:var(--base-blue);display:block;margin-bottom:4px}
+.focus span{font-size:13px;color:var(--muted)}
+.day{
+  margin-top:28px;background:white;border:1px solid var(--border);border-radius:22px;overflow:hidden
+}
+.day-head{
+  background:var(--base-blue);color:white;padding:18px 22px;
+  display:flex;align-items:baseline;justify-content:space-between;gap:14px
+}
+.day-head h3{color:white;margin:0;font-size:24px}
+.day-head span{color:#D9DCFF;font-size:13px;font-weight:700}
+.schedule{width:100%;border-collapse:collapse}
+.schedule th{
+  text-align:left;background:#EEF0FF;color:var(--base-blue);padding:10px 14px;
+  font-size:11px;text-transform:uppercase;letter-spacing:.08em
+}
+.schedule td{padding:12px 14px;border-top:1px solid var(--border);vertical-align:top;font-size:14px}
+.schedule td:first-child{width:155px;font-weight:800;color:var(--base-blue);white-space:nowrap}
+.schedule td:nth-child(2){width:90px;color:var(--muted);font-weight:700}
+.schedule tr.session-row td{background:#FFF8FB}
+.schedule tr.free-row td{background:#FFF9E8}
+.note{
+  margin-top:24px;border-left:5px solid var(--yellow);background:#FFF8E8;
+  padding:18px 20px;border-radius:0 14px 14px 0
+}
+.note strong{color:var(--base-blue)}
+.final{
+  margin-top:54px;border-radius:28px;padding:32px;color:white;
+  background:linear-gradient(135deg,var(--base-blue),var(--dark-blue));overflow:hidden;position:relative
+}
+.final::after{
+  content:"";position:absolute;width:260px;height:260px;border-radius:50%;
+  border:36px solid rgba(61,70,242,.38);right:-100px;bottom:-130px
+}
+.final h2{color:white;position:relative;z-index:2}
+.final p{color:#ECEEFF;max-width:920px;position:relative;z-index:2}
+.footer{
+  margin-top:44px;padding-top:22px;border-top:1px solid var(--border);
+  color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap
+}
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr}
+  .arch-card{grid-template-columns:1fr}
+  .arch-main,.arch-question{padding:20px 22px}
+  .arch-question{padding-top:0}
+  .outputs{grid-template-columns:repeat(2,1fr)}
+  .session-body{grid-template-columns:1fr}
+  .full{grid-column:auto}
+  .nav{display:none}
+}
+@media(max-width:640px){
+  .hero-inner{padding-top:54px}
+  .intro{margin-top:-44px}
+  .outputs,.focus-grid{grid-template-columns:1fr}
+  .session-top{grid-template-columns:1fr}
+  .meta{text-align:left}
+  .schedule{display:block;overflow-x:auto}
+  .day-head{align-items:flex-start;flex-direction:column}
+}
+@media print{
+  .topbar{position:static}
+  body{background:white}
+  .session,.arch-card,.day,.intro{box-shadow:none}
+  .session,.arch-card{break-inside:avoid}
+  .nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark"><span class="eo-e">E</span><span class="eo-o"></span></div>
+      <div class="brand-text">Entrepreneurs' Organization | MEPA</div>
+    </div>
+    <nav class="nav">
+      <a href="#overview">Overview</a>
+      <a href="#session1">Session 1</a>
+      <a href="#session2">Session 2</a>
+      <a href="#session3">Session 3</a>
+      <a href="#session4">Session 4</a>
+      <a href="#full-agenda">Full Agenda</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Final Team Agenda · 4–6 September 2026</div>
+      <h1>MEPA Regional Staff Strategy Summit</h1>
+      <p>A focused working summit to create greater clarity on what matters most, how we work together, what we need to put in place, and what each of us will own after the summit.</p>
+    </div>
+    <aside class="hero-card">
+      <h2>Our summit journey</h2>
+      <div class="flow">
+        <div class="flow-item"><span class="dot"></span>Focus — What matters most?</div>
+        <div class="flow-item"><span class="dot"></span>Work — How must we work together?</div>
+        <div class="flow-item"><span class="dot"></span>Build — What must we put in place?</div>
+        <div class="flow-item"><span class="dot"></span>Commit — What will we own?</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<main>
+
+<section class="intro" id="overview">
+  <p><strong>This is not a new regional strategy process.</strong> The Regional Council has already set the strategic direction for MEPA. Our work is to translate that direction into a simple, practical way of operating as a Regional Staff Team.</p>
+  <p>The pre-summit survey gives us useful context, but we will not work through every survey question or attempt to solve every issue raised. The survey will help us focus on the areas that matter most.</p>
+  <p>By the end of the summit, we want greater <strong>operational clarity, stronger team collaboration, better continuity of work, clear ownership and a practical roadmap</strong> that we can immediately begin implementing.</p>
+</section>
+
+<section class="section">
+  <div class="kicker">Overall Architecture</div>
+  <h2>Three days. Four working sessions. Four clear outputs.</h2>
+  <p class="section-lead">Each session is built around one simple question. The aim is not to create more complexity, but to leave with decisions and tools that make our work easier, clearer and more sustainable.</p>
+
+  <div class="architecture">
+    <article class="arch-card">
+      <div class="arch-time"><strong>Friday, 4 September</strong><span>13:30–16:30 · 3 hours</span></div>
+      <div class="arch-main"><div class="movement">Focus</div><h3>Session 1: What Must We Focus On?</h3><p>Use the survey and Regional Council direction to agree the few priorities Regional Staff needs to organise around.</p></div>
+      <div class="arch-question">What are the few things we need to get right as a Regional Staff Team?</div>
+    </article>
+
+    <article class="arch-card">
+      <div class="arch-time"><strong>Saturday, 5 September</strong><span>09:00–12:00 · 3 hours</span></div>
+      <div class="arch-main"><div class="movement">Work</div><h3>Session 2: How Must We Work Together?</h3><p>Create practical clarity around ownership, communication, collaboration and continuity.</p></div>
+      <div class="arch-question">What do we need from one another for this team to work effectively, even when someone is unavailable?</div>
+    </article>
+
+    <article class="arch-card">
+      <div class="arch-time"><strong>Saturday, 5 September</strong><span>14:00–17:00 · 3 hours</span></div>
+      <div class="arch-main"><div class="movement">Build</div><h3>Session 3: What Do We Need to Put in Place?</h3><p>Turn priorities and team agreements into a practical action roadmap, including simple continuity improvements.</p></div>
+      <div class="arch-question">What must we actually put in place after this summit?</div>
+    </article>
+
+    <article class="arch-card">
+      <div class="arch-time"><strong>Sunday, 6 September</strong><span>09:00–11:00 · 2 hours</span></div>
+      <div class="arch-main"><div class="movement">Commit</div><h3>Session 4: What Are We Committing To?</h3><p>Confirm owners, immediate next steps, review rhythm and individual commitments.</p></div>
+      <div class="arch-question">What are we leaving with, and how will we make sure it happens?</div>
+    </article>
+  </div>
+
+  <div class="outputs">
+    <div class="output"><strong>Our Regional Staff Priorities</strong><span>3–5 priorities that guide where we focus our collective effort.</span></div>
+    <div class="output"><strong>Our Team Agreement</strong><span>A simple agreement for how we own, communicate, collaborate and ensure continuity.</span></div>
+    <div class="output"><strong>Our Action Roadmap</strong><span>Practical actions with owners, timing and support needed.</span></div>
+    <div class="output"><strong>Our Commitments</strong><span>Immediate next steps, review rhythm and personal commitments.</span></div>
+  </div>
+</section>
+
+<section class="session" id="session1">
+  <div class="session-top">
+    <div>
+      <div class="eyebrow">Session 1 · Focus</div>
+      <h3>What Must We Focus On?</h3>
+      <p>Start with the direction already set for the region, use the survey as context, and agree the few priorities around which the Regional Staff Team needs to organise.</p>
+    </div>
+    <div class="meta"><strong>Friday, 4 September</strong><span>13:30–16:30 · 3 hours</span></div>
+  </div>
+  <div class="session-body">
+    <div>
+      <h4>Purpose</h4>
+      <p>Create shared clarity on what matters most for the Regional Staff Team and what the summit needs to help us achieve.</p>
+    </div>
+    <div class="question-box">
+      <strong>Core question</strong>
+      What are the few things we need to get right as a Regional Staff Team?
+    </div>
+    <div class="full">
+      <h4>What we will focus on</h4>
+      <ul>
+        <li>A concise view of what we learned from the pre-summit survey.</li>
+        <li>The Regional Council's existing direction and what it means for Regional Staff.</li>
+        <li>The few priorities that need our collective attention.</li>
+        <li>What belongs in this summit versus what should be addressed later through team development or operational improvement.</li>
+      </ul>
+    </div>
+    <div class="output-box full">
+      <strong>Session output</strong><br>
+      A short list of <strong>3–5 agreed Regional Staff priorities</strong>, each with a clear statement of what success should look like.
+    </div>
+  </div>
+</section>
+
+<section class="session" id="session2">
+  <div class="session-top">
+    <div>
+      <div class="eyebrow">Session 2 · Work</div>
+      <h3>How Must We Work Together?</h3>
+      <p>Focus on the practical behaviours and operating clarity that will help us function as one team and reduce dependence on individual people.</p>
+    </div>
+    <div class="meta"><strong>Saturday, 5 September</strong><span>09:00–12:00 · 3 hours</span></div>
+  </div>
+  <div class="session-body">
+    <div>
+      <h4>Purpose</h4>
+      <p>Agree the simple ways of working that will strengthen accountability, collaboration, knowledge sharing and business continuity.</p>
+    </div>
+    <div class="question-box">
+      <strong>Core question</strong>
+      What do we need from one another for this team to work effectively, even when someone is unavailable?
+    </div>
+    <div class="full">
+      <h4>Four areas we will keep the conversation around</h4>
+      <div class="focus-grid">
+        <div class="focus"><b>Ownership</b><span>Where does responsibility sit, and where do we need greater clarity?</span></div>
+        <div class="focus"><b>Communication</b><span>What information needs to flow across the team and how do we keep one another informed?</span></div>
+        <div class="focus"><b>Collaboration</b><span>Where do we rely on one another, and how do we support delivery across functions?</span></div>
+        <div class="focus"><b>Continuity</b><span>What must exist so important work does not stop when someone is unavailable or leaves?</span></div>
+      </div>
+    </div>
+    <div class="output-box full">
+      <strong>Session output</strong><br>
+      One practical <strong>Regional Staff Team Agreement</strong> covering how we own work, communicate, collaborate, support one another and protect continuity.
+    </div>
+  </div>
+</section>
+
+<section class="session" id="session3">
+  <div class="session-top">
+    <div>
+      <div class="eyebrow">Session 3 · Build</div>
+      <h3>What Do We Need to Put in Place?</h3>
+      <p>Convert the priorities and team agreement into practical actions rather than designing large or complicated new systems.</p>
+    </div>
+    <div class="meta"><strong>Saturday, 5 September</strong><span>14:00–17:00 · 3 hours</span></div>
+  </div>
+  <div class="session-body">
+    <div>
+      <h4>Purpose</h4>
+      <p>Build a simple implementation roadmap that identifies the actions, owners and support needed after the summit.</p>
+    </div>
+    <div class="question-box">
+      <strong>Core question</strong>
+      What must we actually put in place after this summit?
+    </div>
+    <div class="full">
+      <h4>What we will work through</h4>
+      <ul>
+        <li>The practical actions required to move each agreed priority forward.</li>
+        <li>Who will own or lead each action.</li>
+        <li>What support or input will be required from others.</li>
+        <li>Where we are currently too dependent on one person and what simple step can reduce that dependency.</li>
+        <li>Which useful survey ideas belong in a longer-term development or improvement list rather than the immediate roadmap.</li>
+      </ul>
+    </div>
+    <div class="output-box full">
+      <strong>Session output</strong><br>
+      A simple <strong>Regional Staff Action Roadmap</strong> showing <strong>What · Owner · By When · Support Needed</strong>, plus a short list of future development areas to address after the summit.
+    </div>
+  </div>
+</section>
+
+<section class="session" id="session4">
+  <div class="session-top">
+    <div>
+      <div class="eyebrow">Session 4 · Commit</div>
+      <h3>What Are We Committing To?</h3>
+      <p>Bring the work together, confirm ownership and leave with a clear understanding of what happens next.</p>
+    </div>
+    <div class="meta"><strong>Sunday, 6 September</strong><span>09:00–11:00 · 2 hours</span></div>
+  </div>
+  <div class="session-body">
+    <div>
+      <h4>Purpose</h4>
+      <p>Close the summit with clarity, accountability and momentum rather than another layer of discussion.</p>
+    </div>
+    <div class="question-box">
+      <strong>Core question</strong>
+      What are we leaving with, and how will we make sure it happens?
+    </div>
+    <div class="full">
+      <h4>What we will confirm</h4>
+      <ul>
+        <li>Our agreed Regional Staff priorities.</li>
+        <li>Our Team Agreement.</li>
+        <li>The Action Roadmap and named owners.</li>
+        <li>The immediate actions that happen first.</li>
+        <li>How and when we will review progress.</li>
+        <li>One personal commitment from each team member.</li>
+      </ul>
+    </div>
+    <div class="output-box full">
+      <strong>Session output</strong><br>
+      A clear set of <strong>final commitments and next steps</strong>, including owners, first actions, a review rhythm and individual commitments.
+    </div>
+  </div>
+</section>
+
+<section class="section" id="full-agenda">
+  <div class="kicker">Full Programme</div>
+  <h2>Summit agenda</h2>
+  <p class="section-lead">The working sessions are deliberately balanced with time to connect, recharge and enjoy the team experience together.</p>
+
+  <div class="day">
+    <div class="day-head"><h3>Friday, 4 September 2026</h3><span>Arrival, transition and Session 1</span></div>
+    <table class="schedule">
+      <thead><tr><th>Time</th><th>Duration</th><th>Agenda</th></tr></thead>
+      <tbody>
+        <tr><td>07:00–09:00</td><td>2 hrs</td><td>Breakfast</td></tr>
+        <tr><td>11:00–12:00</td><td>1 hr</td><td>GSW check-out</td></tr>
+        <tr><td>12:00–13:00</td><td>1 hr</td><td>Lunch</td></tr>
+        <tr><td>13:00–13:30</td><td>30 min</td><td>Check-in</td></tr>
+        <tr class="session-row"><td>13:30–16:30</td><td>3 hrs</td><td><strong>Session 1: What Must We Focus On?</strong><br>Agree the few priorities Regional Staff needs to organise around.</td></tr>
+        <tr class="free-row"><td>16:30–18:30</td><td>2 hrs</td><td>Free time</td></tr>
+        <tr><td>18:30–19:00</td><td>30 min</td><td>Travel to restaurant</td></tr>
+        <tr><td>19:00–21:00</td><td>2 hrs</td><td>Dinner</td></tr>
+        <tr><td>21:00–21:30</td><td>30 min</td><td>Travel to hotel</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><h3>Saturday, 5 September 2026</h3><span>Team operating clarity, roadmap and team experience</span></div>
+    <table class="schedule">
+      <thead><tr><th>Time</th><th>Duration</th><th>Agenda</th></tr></thead>
+      <tbody>
+        <tr><td>07:00–09:00</td><td>2 hrs</td><td>Breakfast</td></tr>
+        <tr class="session-row"><td>09:00–12:00</td><td>3 hrs</td><td><strong>Session 2: How Must We Work Together?</strong><br>Agree how we will own work, communicate, collaborate and strengthen continuity.</td></tr>
+        <tr><td>12:00–12:15</td><td>15 min</td><td>Walk to restaurant</td></tr>
+        <tr><td>12:15–13:45</td><td>1 hr 30 min</td><td>Lunch</td></tr>
+        <tr><td>13:45–14:00</td><td>15 min</td><td>Walk back to hotel</td></tr>
+        <tr class="session-row"><td>14:00–17:00</td><td>3 hrs</td><td><strong>Session 3: What Do We Need to Put in Place?</strong><br>Turn our priorities and agreements into a practical action roadmap.</td></tr>
+        <tr class="free-row"><td>17:00–18:30</td><td>1 hr 30 min</td><td>Free time</td></tr>
+        <tr><td>18:30–19:00</td><td>30 min</td><td>Travel to VIP Golf</td></tr>
+        <tr><td>19:00–22:00</td><td>3 hrs</td><td><strong>Reinforce Team Spirit</strong><br>Team building and dinner</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="day">
+    <div class="day-head"><h3>Sunday, 6 September 2026</h3><span>Commitments and close</span></div>
+    <table class="schedule">
+      <thead><tr><th>Time</th><th>Duration</th><th>Agenda</th></tr></thead>
+      <tbody>
+        <tr><td>07:00–09:00</td><td>2 hrs</td><td>Breakfast</td></tr>
+        <tr class="session-row"><td>09:00–11:00</td><td>2 hrs</td><td><strong>Session 4: What Are We Committing To?</strong><br>Confirm final outputs, owners, review rhythm and practical next steps.</td></tr>
+        <tr><td>11:00–12:00</td><td>1 hr</td><td>Check-out</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <strong>A deliberate approach to simplicity:</strong> We will use the survey to focus the conversation, not to create dozens of new workstreams. Topics that are valuable but do not require an immediate summit decision will be captured for future development, training or operational improvement.
+  </div>
+</section>
+
+<section class="final">
+  <h2>What success looks like</h2>
+  <p>By Sunday, we should not leave with a long list of ideas. We should leave with a small number of shared priorities, a clear agreement on how we work together, a practical action roadmap, named owners and a commitment to make the way we operate simpler, stronger and more sustainable.</p>
+</section>
+
+<footer class="footer">
+  <span>MEPA Regional Staff Strategy Summit · Final Agenda · 4–6 September 2026</span>
+  <span>Focused on clarity, continuity, collaboration and execution</span>
+</footer>
+
+</main>
+</body>
+</html>
